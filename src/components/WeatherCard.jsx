@@ -8,7 +8,7 @@ const WeatherCard = ({ weather }) => {
   const { temp, feels_like, humidity, pressure } = weather.main;
   const { main, description } = weather.weather[0];
 
-  // 🔥 Animated Icon Mapping
+  //  Animated Icon Mapping
   const getAnimatedIcon = (main) => {
     const map = {
       Thunderstorm: "SLEET",
@@ -46,7 +46,7 @@ const WeatherCard = ({ weather }) => {
         {name}, {country}
       </h2>
 
-      {/* 🔥 Animated Weather Icon */}
+      {/*  Animated Weather Icon */}
       <div className="flex justify-center mb-2">
         <ReactAnimatedWeather
           icon={getAnimatedIcon(main)}

@@ -17,12 +17,12 @@ export const useWeather = () => {
 
         let url = "";
 
-        // 🌍 CASE 1: Use GPS coordinates
+        //  CASE 1: Use GPS coordinates
         if (coords?.lat && coords?.lon) {
           url = `https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&appid=${API_KEY}&units=metric`;
         }
 
-        // 🏙 CASE 2: Use city name
+        //  CASE 2: Use city name
         else if (city) {
           // check cache only for city search
           const cached = localStorage.getItem(`weather_${city}`);

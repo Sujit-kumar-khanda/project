@@ -50,7 +50,7 @@ const Navbar = () => {
             <span className="text-gray-500">🔍</span>
           </div>
 
-          {/* 📍 Use My Location Button */}
+          {/* Use My Location Button */}
           <button
             onClick={handleLocation}
             className="px-3 py-1 rounded-full
